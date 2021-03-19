@@ -131,8 +131,8 @@ class WinixPurifier(FanEntity):
         return attributes
 
     @property
-    def entity_id(self) -> str:
-        """Return the unique id of the switch."""
+    def unique_id(self):
+        """Return a unique_id for this entity."""
         return self._id
 
     @property
